@@ -1,0 +1,96 @@
+.main_container {
+    width: 80%;
+}
+
+.meal_header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.meal_header h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.div_meal_header {
+    display: flex;
+    gap: 5px;
+   justify-content: right;
+   margin-right: 30px;
+}
+.meal_header input {
+    border-radius: 5px;
+    height: 35px;
+    width: 220px;
+    padding: 10px;
+}
+
+.meal_header button {
+    border-radius: 5px;
+    height: 35px;
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(25, 154, 204);
+
+}
+
+.meal_header button:hover {
+    background-color: white;
+   
+}
+.meal_header img {
+    width: 35px;
+}
+
+.list_meal {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item_meal {
+    box-shadow: 0px 15px 23px -1px rgba(0,0,0,0.74);
+    border-radius:9px ;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item_meal:hover {
+    cursor: pointer;
+}
+
+.item_meal figure {
+    height: 220px;
+}
+
+.item_meal img {
+    height: 100%;
+    border-radius: 9px 9px 0 0 ;
+}
+
+.item_meal span {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius:0 0 9px 9px;
+    height: 25px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    
+}
