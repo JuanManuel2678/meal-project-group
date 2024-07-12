@@ -8,5 +8,5 @@ li {
   list-style: none;
 }
 .app_container {
-  /* display: flex; */
+  display: flex;
 }
