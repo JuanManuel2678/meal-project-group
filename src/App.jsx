@@ -1,10 +1,15 @@
 import React from 'react'
+import { RightSide } from './components/Categori/RightSide'
+import { Main } from './components/Meals/Main'
 
 const App = () => {
   return (
-    <div>
-      <h1>PRovan do la rama de git categori</h1>
-    </div>
+   
+      <div className='app_container'>
+      <RightSide/>
+      <Main/>
+      </div>
+  
   )
 }
 
