@@ -7,3 +7,6 @@
 li {
   list-style: none;
 }
+.app_container {
+  display: flex;
+}

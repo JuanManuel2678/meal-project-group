@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Details from './components/MealDitails/Details'
+
 
 const App = () => {
   return (
-    <div>
+   
+      <div className='app_container'>
+ 
+      </div>
+  
 
-
-
-
-    </div>
   )
 }
 
