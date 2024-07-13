@@ -10,7 +10,7 @@
     justify-content: space-around;
     gap: 10px;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .meal_header h1 {
@@ -54,7 +54,7 @@
 }
 
 .list_meal {
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -66,6 +66,7 @@
     border-radius:9px ;
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .item_meal:hover {
@@ -73,7 +74,7 @@
 }
 
 .item_meal figure {
-    height: 220px;
+    height: 230px;
 }
 
 .item_meal img {
@@ -81,16 +82,17 @@
     border-radius: 9px 9px 0 0 ;
 }
 
-.item_meal span {
-    background-color: black;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    border-radius:0 0 9px 9px;
-    height: 25px;
+.container_span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.679);
+    color: aliceblue;
     padding: 5px;
+    text-align: center;
+}
+
+.container_span span {
     font-size: 13px;
     font-weight: 700;
-    
 }

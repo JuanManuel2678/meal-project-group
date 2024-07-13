@@ -2,7 +2,8 @@ aside {
     width: 320px;
     box-shadow: 11px -1px 12px -1px rgba(0,0,0,0.66);
     height: 100vr;
-    flex-shrink: calc(100vh);
+    /* flex-shrink: calc(100vh); */
+    border-radius: 0 0 16px 0;
 }
 
 .categorie_header {
@@ -30,13 +31,13 @@ aside {
 .list_categori {
     display: flex;
     flex-direction: column;
-    gap: x;
     margin-top:15px;
+    height: 100vr;
 }
 
 .item_categori {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 5px;
     margin-right: 20px;
@@ -44,6 +45,7 @@ aside {
     height: 50px;
     cursor: pointer;
     border-bottom: solid black 1px;
+    padding: 5px;
 } 
 .item_categori:hover {
     background: rgb(33,33,36);

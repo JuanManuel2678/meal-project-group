@@ -34,7 +34,7 @@ export const Main = () => {
 
         <List>
             {data && 
-             data.map(item => (<Item key={item.id} item={item}/>))}
+             data.slice(0, 15).map(item => (<Item key={item.id} item={item}/>))}
         </List>
       
     </main>

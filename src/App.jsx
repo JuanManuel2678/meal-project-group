@@ -7,10 +7,19 @@ const App = () => {
   return (
     <>
       <div className="app_container">
-        <RightSide />
-        <Main/>
+
+          <div className="app_categori">
+          <RightSide />
+          <Main/>
+          </div>
+
+         <div className="app_details">
+         <Details />
+          
+         </div>
+
       </div>
-      <Details />
+     
     </>
   );
 };
