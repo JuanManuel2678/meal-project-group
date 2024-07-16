@@ -1,17 +1,17 @@
+import { Link } from "react-router-dom";
 
-
-export const Item = ({item: {category, img}}) => {
-
+export const Item = ({ item: { category, img } }) => {
   return (
+    <li className="item_categori">
 
-    <li className='item_categori'>
-      <h4>{category}</h4>
+        <Link to={`/meals/${category}`}>
 
-      <figure>
-        <img src={img} alt="" />
-      </figure>
-      
+          <h4>{category}</h4>
+            <figure>
+               <img src={img} alt={category} />
+           </figure>
+    
+        </Link>
     </li>
-  )
-}
-
+  );
+};

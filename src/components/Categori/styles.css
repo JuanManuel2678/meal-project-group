@@ -2,6 +2,7 @@ aside {
     width: 320px;
     box-shadow: 11px -1px 12px -1px rgba(0,0,0,0.66);
     height: 100vr;
+    min-height: 980px;
     /* flex-shrink: calc(100vh); */
     border-radius: 0 0 16px 0;
 }
@@ -35,7 +36,7 @@ aside {
     height: 100vr;
 }
 
-.item_categori {
+.item_categori a {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,8 +47,10 @@ aside {
     cursor: pointer;
     border-bottom: solid black 1px;
     padding: 5px;
+    text-decoration: none;
+    color: black;
 } 
-.item_categori:hover {
+.item_categori a:hover {
     background: rgb(33,33,36);
     background: linear-gradient(180deg, rgba(33,33,36,1) 0%, rgba(94,94,113,0.9290091036414566) 45%, rgba(2,26,31,0.9794292717086834) 100%);
     color: white;

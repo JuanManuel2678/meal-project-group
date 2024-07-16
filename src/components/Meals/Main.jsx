@@ -3,14 +3,18 @@ import { Header } from "./Header"
 import { List } from "./List"
 import { Item } from "./Item"
 import './style.css'
+import { useParams } from "react-router"
 
 
 export const Main = () => {
     const [data, setData] = useState([])
     const [meal, setMeal] = useState([])
 
-    async function getData () {
-        const rs = await fetch ('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
+    const { category } = useParams()
+    
+
+    async function getData (categ) {
+        const rs = await fetch (`https://www.themealdb.com/api/json/v1/1/filter.php?c=${categ}`)
         const rsJson = await rs.json()
 
         const filterMeals = rsJson.meals.map(meal => ({
@@ -18,14 +22,16 @@ export const Main = () => {
             id: meal?.idMeal,
             meal: meal?.strMeal,
             img: meal?.strMealThumb
+
         }))
         setData(filterMeals)
         setMeal(filterMeals)
       }
 
     useEffect(() => {
-        getData()
-    }, [])
+      const categ = category || 'Seafood'
+        getData(categ)
+  }, [category])
 
   return (
 
@@ -41,3 +47,4 @@ export const Main = () => {
   )
 }
 
+//  const cat = category || 'Seafood'

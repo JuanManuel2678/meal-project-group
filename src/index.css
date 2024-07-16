@@ -13,13 +13,5 @@ li {
 }
 .app_container {
   display: flex;
-  flex-direction: column;
 }
 
-.app_categori {
-  display: flex;
-}
-
-.app_details {
-  place-items: center;
-}
